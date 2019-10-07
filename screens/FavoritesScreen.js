@@ -6,7 +6,7 @@ import HeaderButton from "../components/HeaderButton";
 import MealList from "../components/MealList";
 
 const FavoritesScreen = props => {
-  const favMeals = state.meals.favMeals;
+  const favMeals = useSelector(state => state.meals.favoriteMeals);
   return <MealList listData={favMeals} navigation={props.navigation} />;
 };
 
